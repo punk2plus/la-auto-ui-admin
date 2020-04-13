@@ -33,8 +33,7 @@ export default {
 
 <style  lang="less">
 .jsonViewer {
-  width: 500px;
-  height: 100%;
+  width: 100%;
   h2 {
     margin-left: 20px;
   }

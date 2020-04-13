@@ -26,7 +26,7 @@ const router = new Router({
         {
           path: "/home",
           name: "home",
-          meta: { icon: "info-circle", title: "主页" },
+          meta: { icon: "info-circle", title: "form配置" },
           component: () => import('./views/form/Home.vue'),
         
         },{
@@ -43,6 +43,12 @@ const router = new Router({
             }
           ]
         },
+        {
+          path: "/table",
+          name: "table",
+          meta: { icon: "info-circle", title: "table配置" },
+          component: () => import('./views/table/index.vue'),
+        }
       ]
     }
   ]

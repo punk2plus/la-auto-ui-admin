@@ -1,11 +1,15 @@
 <template>
   <el-header class="Header">
-    <div class="title">自动ui配置生成平台</div>
+    <div class="title">{{ $route.meta.title || '--' }}</div>
   </el-header>
 </template>
 
 <script>
-export default {};
+export default {
+  created() {
+    // console.log(this.$route.meta.)
+  }
+};
 </script>
 
 <style lang="less">

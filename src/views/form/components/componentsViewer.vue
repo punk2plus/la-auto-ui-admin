@@ -56,7 +56,7 @@ export default {
 <style  lang="less">
 .componentsViewer {
   width: 450px;
-  height: 100%;
+  min-height: 400px;
   border-right: 1px solid #ccc;
   .components-item {
     margin: 5px;
