@@ -8,7 +8,7 @@
         </div>
         <jsonViewer :formConfig="config" />
       </el-tab-pane>
-      <el-tab-pane label="预览" name="display">form display</el-tab-pane>
+      <el-tab-pane label="预览" name="display">table display</el-tab-pane>
     </el-tabs>
   </div>
 </template>
@@ -68,7 +68,7 @@ export default {
       this.config.formItemList.push(buttonItem);
     },
     handleClick() {
-
+      
     }
   }
 };

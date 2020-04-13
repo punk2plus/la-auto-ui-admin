@@ -1,12 +1,17 @@
 <template>
   <div class="Aside">
     <el-aside style="width: 200px;">
-      <el-menu :default-openeds="['1', '3']">
-        <el-submenu index="1">
+      <el-menu :default-openeds="['form']" @select="handleSelect">
+        <el-menu-item index="form">
           <template slot="title">
-            <i class="el-icon-message"></i>自动表单
+            <i class="el-icon-message"></i>form
           </template>
-        </el-submenu>
+        </el-menu-item>
+        <el-menu-item index="table">
+          <template slot="title">
+            <i class="el-icon-message"></i>table
+          </template>
+        </el-menu-item>
       </el-menu>
     </el-aside>
   </div>
@@ -14,7 +19,13 @@
 
 <script>
 export default {
-  computed: {}
+  computed: {},
+  methods: {
+    handleSelect(key, keyPath) {
+      console.log(key, keyPath);
+      this.$router.push(`/${key}`)
+    }
+  }
 };
 </script>
 

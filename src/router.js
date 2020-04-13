@@ -21,11 +21,11 @@ const router = new Router({
       children: [
         {
           path: "/",
-          redirect: "/home"
+          redirect: "/form"
         },
         {
-          path: "/home",
-          name: "home",
+          path: "/form",
+          name: "form",
           meta: { icon: "info-circle", title: "form配置" },
           component: () => import('./views/form/Home.vue'),
         
